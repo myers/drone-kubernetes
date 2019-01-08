@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e
+
+export KUBECONFIG=/tmp/kubeconfig
+
 if [ -z ${PLUGIN_NAMESPACE} ]; then
   PLUGIN_NAMESPACE="default"
 fi
